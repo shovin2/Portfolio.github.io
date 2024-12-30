@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shovin Barik - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: linear-gradient(135deg, #1e1e30, #3b3b58);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+            background-color: #0a0a23;
+            height: 70px;
+        }
+        nav ul {
+            display: flex;
+        }
+        nav ul li {
+            list-style: none;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ff758c;
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 90vh;
+            padding: 0 5rem;
+        }
+        .hero .text-content {
+            max-width: 600px;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            color: #ff758c;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+        .hero img {
+            max-width: 400px;
+            width: 100%;
+        }
+        section {
+            margin: 8rem 0;
+            padding: 4rem;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .about, .experience, .skills, .contact {
+            max-width: 90%;
+            margin: auto;
+        }
+        .about h2, .experience h2, .skills h2, .contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #ff758c;
+        }
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .skill-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .skill-item:hover {
+            transform: scale(1.05);
+        }
+        .skill-item p {
+            color: white;
+            font-weight: 600;
+        }
+        .contact ul {
+            list-style: none;
+            padding: 0;
+        }
+        .contact ul li {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+        .contact ul li i {
+            margin-right: 10px;
+            color: #ff758c;
+        }
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding: 2rem;
+            }
+            .hero img {
+                margin-top: 20px;
+            }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .skills-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Shovin's Portfolio</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <div class="text-content">
+                <h1>Hi, My name is <span style="color: #ff758c;">Shovin</span></h1>
+                <p id="typed-output"></p>
+            </div>
+            <img src="developer.png" alt="Developer Illustration">
+        </div>
+        <section class="about" id="about">
+            <h2>About Me</h2>
+            <p>
+                Aspiring Computer Science Engineer with a passion for building intelligent solutions through machine learning and web development.
+                I thrive on crafting innovative technologies, from developing dynamic web applications to designing data-driven models that solve complex problems.
+                With a blend of creativity, technical expertise, and a drive for continuous learning, I’m committed to bridging the gap between ideas and impactful outcomes.
+                Let’s connect and create something extraordinary.
+            </p>
+        </section>
+        <section class="skills" id="skills">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <p>MongoDB</p>
+                </div>
+                <div class="skill-item">
+                    <p>ExpressJS</p>
+                </div>
+                <div class="skill-item">
+                    <p>ReactJS</p>
+                </div>
+                <div class="skill-item">
+                    <p>NodeJS</p>
+                </div>
+                <div class="skill-item">
+                    <p>SQL</p>
+                </div>
+            </div>
+        </section>
+        <section class="experience" id="experience">
+            <h2>Experience</h2>
+            <p>
+                <strong>Summer Internship | BusinessNext | May 2024 – July 2024</strong><br>
+                During my summer internship at BusinessNext, I gained hands-on experience in full-stack web development, mastering technologies such as React.js, Node.js, Express.js, MongoDB, and SQL.
+                I honed my skills in front-end design using HTML5, JavaScript, and CSS while also deepening my backend expertise in Node.js and deployed my database using MongoDB and MySQL.
+                During this time, I successfully developed and deployed CRUD websites, showcasing my ability to create dynamic and efficient web applications. This experience not only enhanced my technical proficiency but also strengthened my problem-solving and collaborative skills in a professional environment.
+            </p>
+        </section>
+        <section class="contact" id="contact">
+            <h2>Contact</h2>
+            <ul>
+                <li><i class="fas fa-phone"></i> +91-1234567890</li>
+                <li><i class="fab fa-instagram"></i> <a href="https://instagram.com/yes_itz_me_barik" target="_blank">@yes_itz_me_barik</a></li>
+                <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/shovin-barik-0b1652250" target="_blank">Shovin Barik</a></li>
+            </ul>
+        </section>
+    </main>
+    <script>
+        // Typed.js Initialization
+        var typed = new Typed('#typed-output', {
+            strings: ["a Web Developer", "a Machine Learning Enthusiast", "a Problem Solver"],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true
+        });
+    </script>
+</body>
+</html>
